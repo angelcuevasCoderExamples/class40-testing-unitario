@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "mocha test/supertest.test.js"
+    "test": "mocha src/test --recursive",
+    "test-watch": "nodemon --exec \"mocha src --recursive  --watch --watch-files src\""
   },
   "keywords": [],
   "author": "",
@@ -22,7 +23,7 @@
     "supertest": "^6.3.3"
   },
   "devDependencies": {
-    "chai": "^4.3.7",
-    "mocha": "^10.1.0"
+    "chai": "^4.4.1",
+    "mocha": "^10.4.0"
   }
 }
